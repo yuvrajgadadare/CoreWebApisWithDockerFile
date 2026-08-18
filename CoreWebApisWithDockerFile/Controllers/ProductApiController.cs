@@ -38,5 +38,13 @@ namespace CoreWebApisWithDockerFile.Controllers
             products.Add(new Product() { ProductId = 5, ProductName = "Tea Powder", Gst = 12, Rate = 100, StockQuantity = 10 });
             return products;
         }
+
+        [HttpGet]
+        [Route("api/testapi")]
+        public string  TestSampleApi()
+        {
+            return  "This is Test Api";
+        }
+
     }
 }
