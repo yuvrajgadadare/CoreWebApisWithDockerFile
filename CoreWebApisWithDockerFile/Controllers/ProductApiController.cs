@@ -51,6 +51,11 @@ namespace CoreWebApisWithDockerFile.Controllers
         {
             return  "This is Second Test Api";
         }
-
+ [HttpGet]
+        [Route("api/testthirdapi")]
+        public string  TestThirdApi()
+        {
+            return  "This is Third Test Api";
+        }
     }
 }
