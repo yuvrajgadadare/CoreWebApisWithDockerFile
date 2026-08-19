@@ -25,6 +25,12 @@ namespace CoreWebApisWithDockerFile.Controllers
             return db.TbltrainingCourses.Find(id);
         }
 
+ [HttpGet]
+        [Route("api/demoapi")]
+        public string  SampleGetApi()
+        {
+            return "Welcome to DemoApi";
+        }
 
     }
 }
