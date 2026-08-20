@@ -20,6 +20,12 @@ namespace CoreWebApisWithDockerFile.Controllers
         {
              return products;
         }
+          [HttpGet]
+        [Route("api/square/{id}")]
+        public string getSquare(int id) 
+        {
+             return  $"Square={id*id}";
+        }
         [HttpGet]
         [Route("api/product/{id}")]
         public Product GetProduct(int id)
